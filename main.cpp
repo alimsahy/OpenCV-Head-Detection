@@ -9,7 +9,7 @@ int main()
 	CDetection detection("Face Detection");
 
 	detection.setScalingFactor(0.50);
-	detection.setFacemask("/home/alimsah/Desktop/AI/Face/mask.png");
+	detection.setFacemask("mask.png");
 	detection.setClassifier(detection.FrontalFace2);
 	detection.processFrame();
 	waitKey(1);

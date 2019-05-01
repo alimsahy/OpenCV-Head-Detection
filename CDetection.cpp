@@ -106,17 +106,17 @@ void CDetection::setClassifier(int classifier)
 	{
 		case CDetection::ClassifierType::FrontalFace:
 		{
-			this->m_classifier.load("HS.xml");
+			this->m_classifier.load("haarcascade_frontalface_default.xml");
 			break;
 		}
 		case CDetection::ClassifierType ::FrontalFace2:
 		{
-			this->m_classifier.load("/home/alimsah/opencv/data/haarcascades/haarcascade_frontalface_alt2.xml");
+			this->m_classifier.load("haarcascade_frontalface_alt2.xml");
 			break;
 		}
 		default:
 		{
-			this->m_classifier.load("/home/alimsah/opencv/data/haarcascades/haarcascade_frontalface.xml");
+			this->m_classifier.load("haarcascade_frontalface.xml");
 			break;
 		}
 	}
